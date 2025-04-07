@@ -1,0 +1,93 @@
+:root {
+    --primary: #10b981;
+    --primary-foreground: #ffffff;
+    --secondary: #f3f4f6;
+    --secondary-foreground: #1f2937;
+    --accent: #4b5563;
+    --accent-foreground: #ffffff;
+    --background: #ffffff;
+    --foreground: #1f2937;
+    --card: #ffffff;
+    --card-foreground: #1f2937;
+    --popover: #ffffff;
+    --popover-foreground: #1f2937;
+    --muted: #f3f4f6;
+    --muted-foreground: #6b7280;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border: #e5e7eb;
+    --input: #e5e7eb;
+    --ring: #10b981;
+    --radius: 0.5rem;
+    --font-family: 'Inter', sans-serif;
+}
+
+.sidebar {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--primary);
+    border-radius: var(--radius);
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section > div {
+    z-index: 1;
+}
+
+.btn-success {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-success:hover {
+    background-color: #0da271;
+    border-color: #0da271;
+}
+
+.btn-outline-success {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.card {
+    border-radius: var(--radius);
+    border-color: var(--border);
+}
+
+.modal-content {
+    border-radius: var(--radius);
+}
+
+.form-control {
+    border-radius: var(--radius);
+    border-color: var(--input);
+}
+
+.form-control:focus {
+    border-color: var(--ring);
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
